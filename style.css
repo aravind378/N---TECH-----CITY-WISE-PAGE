@@ -1,0 +1,263 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* nav start */
+
+.navigation-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #262626;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: sticky;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    font-weight: bold;
+}
+
+.pre-build {
+    border-style: none;
+    width: 125px;
+    background-color: #262626;
+    color: white;
+    font-weight: bold;
+}
+
+.courses {
+    border-style: none;
+    width: 90px;
+    background-color: #262626;
+    color: white;
+    font-weight: bold;
+}
+
+.features {
+    border-style: none;
+    width: 149px;
+    background-color: #262626;
+    color: white;
+    font-weight: bold;
+}
+
+.support p {
+    color: white;
+    padding-top: 15px;
+}
+
+.end .sub-nav-btn {
+    padding: 10px;
+    background-color: rgb(69, 136, 69);
+    color: white;
+    border-radius: 5px;
+    border-style: none;
+}
+
+/* nav end */
+
+
+
+/* content start */
+
+.full-box {
+    display: flex;
+    position: relative;
+}
+
+.side-navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 5%;
+    background-color: gainsboro;
+    padding: 10px;
+}
+
+.main {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    gap: 20px;
+    
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 180px;
+    gap: 20px;
+}
+
+.bottom {
+    position: absolute;
+    bottom: 5px;
+}
+
+
+
+
+.card-collections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 1px 4px 0px;
+    padding: 20px;
+    gap: 10px;
+    width: 280px;
+    border-radius: 10px;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.content .link a {
+    font-size: 13px;
+}
+
+.content .text p {
+    color: grey;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.bar-value {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#bar-value {
+    width: 100%;
+   border-radius: 10px;
+   height: 5px; 
+}
+
+.date-people {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timer {
+    display: flex;
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(219, 215, 215);
+    padding-left: 5px;
+    padding-right: 8px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+} 
+
+.timer p {
+    margin-bottom: 0;
+}
+
+.human {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+
+
+.hidding-btn button {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border-style: none;
+    background-color: black;
+    color: white;
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+}
+
+.center-mob{
+    position: fixed !important;
+    bottom: 70px;
+    right: 21px;
+    flex-direction: column;
+    gap: 10px;
+    display: none;
+}
+
+
+/* content end */
+
+
+/* media screen start */
+
+
+    @media screen and (max-width: 1000px) {
+    
+     .main {
+        display: grid;
+        grid-template-columns: auto;
+        width: 100%;
+    }
+
+    .side-navigation {
+        display: none;
+    }
+
+
+    .hidding-btn  button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+        border-style: none;
+        background-color: rgb(41, 37, 37);
+        color: white;
+        position: fixed;
+        right: 10px;
+        bottom: 10px;
+    }
+
+    .center-mob{
+        position: fixed !important;
+        bottom: 70px;
+        right: 21px;
+        flex-direction: column;
+        gap: 10px;
+        display: flex;
+    }
+
+    .center-mob img{
+        background-color: white;
+        border: 1px solid black;
+        padding: 3px;
+        border-radius: 50%;
+    }
+
+}
